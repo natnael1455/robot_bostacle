@@ -22,8 +22,8 @@ int distance; // variable for the distance measurement
 void setup() {
   Serial.begin(9600); 
   AFMS.begin();  
-  motor_right->setSpeed(150);
-  motor_left->setSpeed(150);
+  motor_right->setSpeed(100);
+  motor_left->setSpeed(100);
   pinMode(trigPin1, OUTPUT); // Sets the trigPin as an OUTPUT
   pinMode(echoPin1, INPUT); // Sets the echoPin as an INPUT
   pinMode(trigPin2, OUTPUT); // Sets the trigPin as an OUTPUT
