@@ -5,7 +5,7 @@ import random
 from numpy import save ,load
 import numpy as np
 
-data = load('data1.npy')
+data = load('data.npy')
 postions= np.array([0,0,3,0,6,3,2,1,12,6,15,6,4,2,14,7,0,12,3,12,15,6,2,13,8,4,11,4,6,14,5,10])
 postion_m=np.reshape(postions,(16,2))
 s = serial.Serial('/dev/ttyACM0',9600)
@@ -54,6 +54,6 @@ while 1:
     print(data)
     if dd == 'y':
         break
-save('data1.npy', data)
+save('data.npy', data)
 s.close()
     
